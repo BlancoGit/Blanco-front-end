@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: grey;
+	font-family: 'Lato', sans-serif;
+
+}
+#mainNav.navbar-shrink {
+    border-bottom: 2px solid rgba(253,51,1);
+    background-color: rgba(0, 0,0, 0.5);
+  }
+.navbar-light .navbar-toggler {
+    color: #fdd233;
+    border-color: #fdd233;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+header {
+	background-image: url("images/first-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 900px;
+	text-align: center;
+}
+ #navbarResponsive ul {
+ 	box-sizing: border-box;
+}
+#navbarResponsive ul li {
+    margin-right: 10px;
+    }
+#navbarResponsive li a {
+color: #fdd233;
+font-family: "Open Sans";
+font-size: 20px;
+font-weight: 300;
+line-height: 44.72px;
+text-transform: uppercase;
+text-decoration: none;
+}
+ header ul li{
+ 	display: inline-block;
+	margin: 0 20px;
+ }
+ header ul li:last-child {
+	margin-right: 0;
+}
+header ul li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+ header h1, h3 {
+ 	font-size: 100px;
+ 	margin-top: 0;
+ 	color: #fff;
+ }
+ header h3 {
+	margin-top: 370px;
+	font-size: 50px;
+	color: white;
+}
+header a {
+	padding: 20px 60px;
+	background-color: #fed233;
+	border-radius: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #1b181e;
+	font-size: 20px;
+	display: inline-block;
+}
+header h1 + a:hover {
+	text-decoration: none;
+	background-color: #b58f05;
+	color: #fff;
+}
+.white {
+	background: white;
+}
+.dark {
+	background-color: #f1f1f1;
+}
+section h2 {
+	text-align: center;
+	margin-top: 0;
+	padding-top: 70px;
+	margin-bottom: 0;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+section h2 + h4 {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
+}
+section  p {
+	font-size: 20px;
+}
+section .flex {
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section .flex > div {
+	width: 30%;
+	min-width: 320px;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+}
+section .flex > div img {
+	width: 25%;
+}
+section .flex.portfolio > div img {
+	width: 100%;
+}
+.aboutus {
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.aboutus.right {
+	justify-content: flex-end;
+}
+.aboutus .pic {
+	width: 20%;
+}
+.aboutus .pic img {
+	width: 100%;
+}
+.aboutus > div {
+	width: 40%;
+}
+
+footer {
+	text-align: center;
+	padding: 30px;
+}
+
+@media screen and (max-device-width: 400px) {
+	header ul {
+	    max-width: 50%;
+    	margin-left: 0;
+	}
+	header ul li {
+		margin: 0 5px;
+	}
+}
