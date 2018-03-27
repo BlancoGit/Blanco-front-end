@@ -459,14 +459,14 @@ a {
   }
   .header-menu li:after {
     height: 2px;
-    -webkit-transform: translateY(10px) scale(0);
-        -ms-transform: translateY(10px) scale(0);
-            transform: translateY(10px) scale(0);
+    -webkit-transform: translateY(15px) scale(0);
+        -ms-transform: translateY(15px) scale(0);
+            transform: translateY(15px) scale(0);
   }
   .header-menu li:hover:after {
-    -webkit-transform: translateY(10px) scale(1);
-        -ms-transform: translateY(10px) scale(1);
-            transform: translateY(10px) scale(1);
+    -webkit-transform: translateY(15px) scale(1);
+        -ms-transform: translateY(15px) scale(1);
+            transform: translateY(15px) scale(1);
   }
   .dropdown-date {
     height: 100px;
