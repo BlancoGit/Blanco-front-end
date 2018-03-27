@@ -1,0 +1,424 @@
+body
+  margin: 0
+  padding: 0
+
+.wrapper
+  margin: 0 auto
+  padding: 0
+
+.container
+  max-width: 1120px
+  margin: 0 auto
+
+ul
+  padding: 0
+  list-style: none
+
+a
+  text-decoration: none
+
+.header-menu
+  text-align: center
+  li
+    margin-right: 50px
+    display: inline-block
+    a
+      color: #333333
+      font-size: 20px
+      font-weight: 400
+      line-height: 17.13px
+      text-decoration: none
+      transition: all 0.2s
+    &:after
+      content: ""
+      width: 100%
+      height: 3px
+      background-color: #487fc0
+      display: block
+      transform: translateY(24px) scale(0)
+      transition: all 0.3s
+    &:hover
+      a
+        color: #487fc0
+        transition: all 0.2s
+      &:after
+        color: #487fc0
+        transform: translateY(24px) scale(1)
+
+.search
+  &:after
+    color: #487fc0
+    transform: translateY(15px) scale(0) !important
+  &:hover:after
+    transform: translateY(15px) scale(1) !important
+
+.header-menu li:nth-last-child(2)
+  margin-left: 45px
+
+.date, .search
+  position: relative
+
+.main-item
+  &:focus ~ .dropdown-date, &:active ~ .dropdown-date
+    display: flex
+
+.dropdown-date:hover
+  display: flex
+
+.main-item
+  &:focus ~ .dropdown-search, &:active ~ .dropdown-search
+    display: block
+
+.dropdown-search:hover
+  display: block
+
+.dropdown-date
+  z-index: 1000
+  position: absolute
+  height: 180px
+  display: none
+  flex-wrap: wrap
+  background: #fff
+  padding: 15px 30px 35px
+  left: -45%
+  top: 219%
+  box-sizing: border-box
+
+.field
+  width: 124px
+
+.text-input
+  width: 124px
+  padding: 11px 0 11px 10px
+  font-size: 18px
+  border: 1px solid #e5e5e5
+  outline: none
+
+.button
+  width: 290px
+  height: 50px
+  background: #000
+  color: #fff
+  font-size: 18px
+  border: none
+  outline: none
+  cursor: pointer
+  border-radius: 5px
+  transition: all .3s linear
+  &:hover
+    opacity: 0.8
+    color: #555
+    transition: all .3s linear
+
+.dropdown-search
+  z-index: 1000
+  position: absolute
+  right: -215px
+  top: 175%
+  display: block
+  background: #fff
+  height: 170px
+  padding: 15px 30px 35px
+  box-sizing: border-box
+  .text-input
+    width: 274px
+    border: 1px solid #e5e5e5
+
+.header-tittle
+  text-align: center
+  color: #333333
+  font-size: 68px
+  font-weight: 400
+  line-height: 103.95px
+  text-transform: uppercase
+  margin-bottom: 120px
+
+.content
+  padding-bottom: 150px
+  background: #f8f8f9
+
+.content-date
+  padding: 100px 0
+  display: block
+  text-align: center
+  opacity: 0.6
+  color: #151525
+  font-size: 20px
+  font-weight: 400
+  line-height: 17.18px
+  text-transform: uppercase
+
+.box
+  max-height: 350px
+  display: flex
+
+.box-tittle
+  background: #fff
+  padding-left: 48px
+  padding-right: 56px
+  border-right: 1px solid #666666
+  h2
+    padding-top: 26px
+    color: #333333
+    font-size: 28px
+    font-weight: 700
+    line-height: 32px
+    text-transform: uppercase
+  p
+    color: #666666
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+
+.icon img
+  margin-right: 10px
+
+.box-info
+  padding: 91px 55px 0 46px
+  background: #fff
+
+.info
+  color: #333333
+  font-size: 18px
+  font-weight: 400
+  line-height: 43.56px
+  img
+    padding-right: 29px
+    vertical-align: middle
+
+.btn
+  position: relative
+  cursor: pointer
+  outline: 0
+  z-index: 999
+  border-radius: 5px
+  border: 1px solid #000
+  background: #000
+  padding: 14px 46px
+  text-decoration: none
+  color: #fff
+  font-size: 18px
+  font-weight: 500
+  line-height: 16.5px
+  transition: all .5s linear
+  &:hover
+    color: #000
+    background: transparent
+    border: 1px solid #000
+    transition: all .5s linear
+    .dropdown-calendar
+      display: block
+
+.dropdown-calendar
+  position: absolute
+  top: 103%
+  left: 0
+  z-index: 1
+  display: none
+  background: #fff
+  border: 1px solid #cdcdcd
+  border-top: none
+  width: 99%
+  padding: 0
+  li
+    text-align: left
+    font-size: 20px
+    line-height: 16.5px
+    font-weight: 500
+    padding: 5px 0
+    color: #cdcdcd
+    transition: all .2s linear
+    &:hover
+      color: #000
+      cursor: pointer
+      transition: all .2s linear
+    i
+      padding: 0 10px
+
+.fa
+  vertical-align: middle
+  font-size: 26px !important
+
+@media screen and (min-width: 999px) and (max-width: 1100px)
+  .dropdown-search
+    right: -178px
+  .dropdown-date
+    left: -52px
+  .box-tittle
+    padding-right: 36px
+  .box-info
+    padding: 91px 57px 0 35px
+  .box-img img
+    width: 340px
+    height: 350px
+
+@media screen and (min-width: 769px) and (max-width: 999px)
+  .box-info, .box-tittle
+    width: 33.33%
+  .box-img
+    width: 33.33%
+    img
+      width: 100%
+      height: 100%
+
+@media screen and (max-width: 999px)
+  .header-tittle
+    font-size: 60px
+    margin-bottom: 60px
+  .header-menu li
+    margin-right: 30px
+    &:nth-last-child(2)
+      margin-left: 30px
+  .dropdown-search
+    right: -100px
+    height: 140px
+  .dropdown-date
+    padding-top: 10px
+    height: 140px
+    left: -64px
+  .dropdown-calendar li
+    font-size: 17px
+  .field
+    width: 80px
+  .text-input
+    width: 80px
+    padding: 8px 7px
+    font-size: 15px
+  .dropdown-search .text-input
+    width: 200px
+    padding: 5px 8px
+    box-sizing: border-box
+    font-size: 15px
+  .button
+    width: 200px
+    height: 40px
+    font-size: 15px
+  .content-date
+    padding: 75px 0
+  .box-tittle
+    padding: 0 20px
+    h2
+      padding-top: 29px
+      font-size: 22px
+      line-height: 25px
+    p
+      font-size: 16px
+      line-height: 24px
+  .box-info
+    box-sizing: border-box
+    padding: 84px 20px
+  .info img
+    padding-right: 20px
+  .btn
+    font-size: 16px
+    padding: 14px 39px
+  br
+    display: none
+
+@media screen and (max-width: 768px)
+  .header-tittle
+    font-size: 30px
+    line-height: 40px
+    margin-bottom: 40px
+  .header-menu
+    margin-left: 7px
+    li
+      margin-right: 28px
+      margin-left: 0 !important
+      a
+        font-size: 16px
+  .fa
+    font-size: 16px !important
+  .header-menu li
+    &:after
+      height: 2px
+      transform: translateY(10px) scale(0)
+    &:hover:after
+      transform: translateY(10px) scale(1)
+  .dropdown-date
+    height: 100px
+    left: -33px
+    padding: 0px 15px !important
+  .text-input
+    padding: 5px
+    font-size: 13px
+  .dropdown-date
+    .field, .text-input
+      width: 41px
+      margin-bottom: 0
+  .dropdown-search
+    right: -40px
+    height: 100px
+    top: 219%
+    padding: 0px 15px
+    .text-input
+      width: 120px
+      padding: 3px
+      font-size: 12px
+  .button
+    width: 120px
+    height: 28px
+    font-size: 13px
+  .content-date
+    padding: 30px 0
+    font-size: 18px
+  .box
+    height: 100%
+    display: block
+  .box-img
+    text-align: center
+    margin: 0 20px
+    width: 90%
+  .box-tittle
+    background: #f8f8f9
+    padding: 0 20px
+    border-right: none
+    h2
+      padding-top: 20px
+      font-size: 22px
+      line-height: 10px
+    p
+      font-size: 17px
+      line-height: 24px
+  br
+    display: none
+  .icon img
+    width: 28px
+  .box-info
+    padding: 20px
+    padding-bottom: 155px
+    background: #f8f8f9
+  .info
+    padding-bottom: 0 !important
+    img
+      padding-right: 15px !important
+  .btn
+    margin-top: 20px
+    font-size: 16px
+    padding: 14px 36px
+  .dropdown-calendar li
+    font-size: 18px
+
+@media screen and (max-width: 576px)
+  .header-menu li
+    margin-right: 15px
+    a
+      font-size: 14px
+
+@media screen and (max-width: 480px)
+  .box-img img
+    width: 100%
+  .dropdown-date
+    top: 200%
+    left: -93px
+  .dropdown-search
+    right: -9px
+    top: 200%
+
+@media screen and (max-width: 420px)
+  .header-tittle
+    margin-bottom: 20px
+  .header-menu li
+    a
+      font-size: 12px
+    margin-right: 7px

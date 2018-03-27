@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+		<div class="container">
+		<h1 class="header-tittle">events</h1>
+		<ul class="header-menu">
+			<li><a href="#">Amsterdam</a></li>
+			<li><a href="#">Barcelona</a></li>
+			<li><a href="#">Madrid</a></li>
+			<li><a href="#">New York</a></li>
+			<li class="date"><a class="main-item" href="#">Date</a>
+					<div class="dropdown-date">
+				  <p class='field' style="margin-right: 26px;">
+				    <input class='text-input' name='number' placeholder="From" >
+				  </p>
+				  <p class='field'>
+				    <input class='text-input' name='number'  placeholder="Till">
+				  </p>
+				  
+				    <input class='button' type='submit' value='Uprade filter'>
+				</div>
+			</li>
+			<li class="search"><a href="#" class="main-item"><i class="fa fa-search fa-rotate-90" aria-hidden="true"></i></a>
+				<div class="dropdown-search">
+				  <p class='field'>
+				    <input class='text-input' name='search'  placeholder="...." >
+				  </p>
+				    <input class='button' type='submit' value='Search'>
+				</div>
+			</li>
+		</ul>
+		</div>
+	</header>
+	<section class="content">
+		<div class="container">
+		<span class="content-date">june 24</span>
+		<div class="box">
+			<div class="box-img">
+				<img src="img/y.png" alt="photo">
+			</div>
+			<div class="box-tittle">
+				<h2>Event name</h2>
+				<p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Aenean<br> fermentum sapien at consectetur<br> mollis. Nullam ornare, felis vehicula<br> porta semper, mi lorem accumsan<br> nulla, id ultricies felis nunc id eros. Sed<br> suscipit odio non velit...</p>
+				<div class="icon">
+					<a href="#"><img src="img/in.png" alt="lin"></a>
+					<a href="#"><img src="img/f.png" alt="fb"></a>
+					<a href="#"><img src="img/t.png" alt="tw"></a>
+				</div>
+			</div>
+			<div class="box-info">
+				<div class="info"><img src="img/date.png" alt="date">June 15, 2018</div>
+				<div class="info"><img src="img/ticket.png" alt="ticket" style="padding-left: 4px;"> Free</div>
+				<div class="info" style="padding-bottom: 50px;"><img src="img/time.png" alt="time">13:00 - 14:00</div>
+				<button class="btn">Add to calendar
+					<div class="dropdown-calendar">
+					<ul>
+						<li><i class="fa fa-google" aria-hidden="true"></i> Google Calendar</li>
+						<li><i class="fa fa-apple" aria-hidden="true"></i> Apple Calendar</li>
+						<li><i class="fa fa-windows" aria-hidden="true"></i> Outlook.com</li>
+						<li><i class="fa fa-calendar-o" aria-hidden="true"></i> Other Calendar</li>
+					</ul>
+				</div>
+				</button>
+				
+			</div>
+		</div>
+</div>
+	</section>
+</body>
+</html>
