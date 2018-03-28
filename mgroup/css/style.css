@@ -1,8 +1,17 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "DINpro", sans-serif;
 }
-
+@font-face {
+  font-family: "DINpro";
+  font-family: 'DINpro Black';
+  src: url('../Fonts/DINPro-Black_13933.ttf');
+  src: url('../Fonts/DINPro-Medium_13936.ttf');
+}
+ h1, h2 {
+  font-family: "DINpro-Black", sans-serif;
+ }
 .wrapper {
   margin: 0 auto;
   padding: 0;
@@ -14,6 +23,7 @@ body {
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -27,6 +37,7 @@ a {
 }
 
 .header-menu li {
+  padding: 15px 0;
   margin-right: 50px;
   display: inline-block;
 }
@@ -36,6 +47,7 @@ a {
   font-size: 20px;
   font-weight: 400;
   line-height: 17.13px;
+  padding: 15px 0;
   text-decoration: none;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -121,7 +133,7 @@ a {
   background: #fff;
   padding: 15px 30px 35px;
   left: -45%;
-  top: 219%;
+  top: 63px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -165,7 +177,7 @@ a {
   z-index: 1000;
   position: absolute;
   right: -215px;
-  top: 175%;
+  top: 64px;
   display: none;
   background: #fff;
   height: 170px;
@@ -183,7 +195,7 @@ a {
   text-align: center;
   color: #333333;
   font-size: 68px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 103.95px;
   text-transform: uppercase;
   margin-bottom: 120px;
@@ -221,7 +233,7 @@ a {
 }
 
 .box-tittle h2 {
-  padding-top: 26px;
+  padding-top: 7px;
   color: #333333;
   font-size: 28px;
   font-weight: 700;
@@ -241,7 +253,7 @@ a {
 }
 
 .box-info {
-  padding: 91px 55px 0 46px;
+  padding: 66px 43px 0 42px;
   background: #fff;
 }
 
@@ -484,7 +496,7 @@ a {
   .dropdown-search {
     right: -40px;
     height: 100px;
-    top: 219%;
+    top: 55px;
     padding: 0px 15px;
   }
   .dropdown-search .text-input {
@@ -565,12 +577,11 @@ a {
     width: 100%;
   }
   .dropdown-date {
-    top: 200%;
+    top: 55px;
     left: -93px;
   }
   .dropdown-search {
     right: -9px;
-    top: 200%;
   }
 }
 
